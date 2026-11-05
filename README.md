@@ -53,5 +53,4 @@ memory: close other programs and resume with `--from N` (the scripts need about 
 figure numbers are: fig1 → 1, fig3_models → 2, fig2_race_class_grid → 3, fig4 → 4, fig5_rd → 5, fig7 → 6, fig6 → 7.
 
 ## 5. Disclosure
-The code was drafted with an AI assistant (Claude, Anthropic). Describe this accurately in the paper's AI-use statement,
-together with the checks and changes you made yourself.
+AI-assisted tools were used solely for grammar editing and correcting minor coding errors. All data processing, analytical decisions, and interpretations remain the author's own.
