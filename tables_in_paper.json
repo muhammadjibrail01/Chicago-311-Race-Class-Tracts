@@ -1,0 +1,1036 @@
+{
+"T1": {
+"cap": "Table 1. Data sources and analytic samples",
+"cols": [
+"Item",
+"Value"
+],
+"widths": [
+6400,
+2960
+],
+"font": 8.5,
+"rows": [
+[
+"311 requests of the 49 core service types, 2019–2024",
+"4,648,843"
+],
+[
+"Located inside a Cook County census tract",
+"99.97%"
+],
+[
+"Located inside a Chicago census tract",
+"99.85%"
+],
+[
+"Tract matches the community area recorded by the city",
+"99.20%"
+],
+[
+"Speed sample: completed, non-duplicate, resident-initiated requests in analytic tracts",
+"3,534,224"
+],
+[
+"Chicago census tracts (2020 boundaries)",
+"792"
+],
+[
+"Analytic tracts (population ≥ 100, complete ACS indicators)",
+"789"
+],
+[
+"Tracts with a Historic Redlining Indicator score",
+"737"
+],
+[
+"Requests inside a graded 1930s HOLC area (A / B / C / D)",
+"86.3% (1.0 / 9.8 / 56.1 / 33.0)"
+],
+[
+"Requests within 400 m of a C | D border",
+"677,039"
+],
+[
+"Requests within 400 m of a B | C border",
+"530,516"
+],
+[
+"Violent Index crimes geocoded to tracts, 2019–2024",
+"156,267"
+],
+[
+"Building violations geocoded to tracts, 2019–2024",
+"342,757"
+]
+],
+"note": "Sources: City of Chicago Data Portal (311 Service Requests; Crimes; Building Violations); U.S. Census Bureau, ACS 2019–2023 five-year tract tables and 2023 cartographic tract boundaries; Meier and Mitchell, Historic Redlining Indicator (2020 tracts); Mapping Inequality HOLC map polygons."
+},
+"T2": {
+"cap": "Table 2. Tract characteristics by share of Black residents",
+"cols": [
+"",
+"<10% Black",
+"10–60% Black",
+">60% Black",
+"All tracts"
+],
+"widths": [
+3960,
+1350,
+1350,
+1350,
+1350
+],
+"font": 8.5,
+"rows": [
+[
+"N tracts",
+"407",
+"144",
+"238",
+"789"
+],
+[
+"Hardship index (0–100)",
+"31.4",
+"38.1",
+"45.2",
+"36.8"
+],
+[
+"Households below poverty (%)",
+"11.4",
+"20.5",
+"29.0",
+"18.4"
+],
+[
+"Per capita income ($)",
+"59,471",
+"42,080",
+"27,226",
+"46,570"
+],
+[
+"Black residents (%)",
+"3.2",
+"30.5",
+"86.5",
+"33.3"
+],
+[
+"Hispanic residents (%)",
+"38.4",
+"29.5",
+"7.0",
+"27.3"
+],
+[
+"Owner-occupied homes (%)",
+"52.3",
+"40.7",
+"39.0",
+"46.2"
+],
+[
+"Median year built",
+"1952",
+"1954",
+"1951",
+"1952"
+],
+[
+"Violent crimes per 1,000 per year",
+"5.1",
+"10.9",
+"24.0",
+"11.9"
+],
+[
+"Building violations per 1,000 per year",
+"13.1",
+"23.4",
+"45.9",
+"24.9"
+],
+[
+"Historic Redlining Indicator (1–4)",
+"3.21",
+"3.23",
+"3.37",
+"3.26"
+],
+[
+"Adjusted completion time (log points)",
+"-0.071",
+"-0.023",
+"+0.110",
+"-0.008"
+]
+],
+"note": "Unweighted means across the 789 analytic tracts. ACS 2019–2023 five-year estimates. The adjusted completion time is the mean residual, by tract, from the request-level model with type × year, month, weekday, hour, and channel fixed effects and log workload."
+},
+"T3": {
+"cap": "Table 3. How much independent variation in race and class do tracts provide?",
+"cols": [
+"",
+"Community areas (77)",
+"Census tracts (789)"
+],
+"widths": [
+4960,
+2200,
+2200
+],
+"font": 8.5,
+"rows": [
+[
+{
+"panel": "Panel A. Correlations and variance"
+}
+],
+[
+"Correlation: hardship index and % Black",
+"0.47",
+"0.48"
+],
+[
+"Correlation: low income or poverty and % Black",
+"0.74 (low income)",
+"0.63 (poverty)"
+],
+[
+"Share of % Black variance not explained by hardship",
+"0.78",
+"0.77"
+],
+[
+"Share of tract variance lying within community areas: hardship",
+"—",
+"0.27"
+],
+[
+"Share of tract variance lying within community areas: % Black",
+"—",
+"0.12"
+],
+[
+{
+"panel": "Panel B. Number of tracts by race and poverty (tract poverty terciles)"
+}
+],
+[
+"Tracts: low / middle / high poverty",
+"",
+""
+],
+[
+"  <10% Black",
+"",
+"222 / 147 / 38"
+],
+[
+"  10-60% Black",
+"",
+"27 / 66 / 51"
+],
+[
+"  >60% Black",
+"",
+"14 / 50 / 174"
+]
+],
+"note": "Community-area figures use the 2008–2012 Hardship Index and ACS 2019–2023 low-income share, as in the companion analysis; tract figures use the tract hardship index rebuilt from ACS 2019–2023 with the same six indicators."
+},
+"T4": {
+"cap": "Table 4. Race, class, and the speed of 311 service: request-level models",
+"cols": [
+"",
+"(1)",
+"(2)",
+"(3)",
+"(4)",
+"(5)",
+"(6)"
+],
+"widths": [
+3060,
+1050,
+1050,
+1050,
+1050,
+1050,
+1050
+],
+"font": 8,
+"rows": [
+[
+"Hardship index",
+"0.076***",
+"",
+"0.004",
+"0.013*",
+"0.011",
+""
+],
+[
+"",
+"(0.010)",
+"",
+"(0.010)",
+"(0.008)",
+"(0.008)",
+""
+],
+[
+"",
+"[0.005]",
+"",
+"[0.007]",
+"[0.006]",
+"[0.006]",
+""
+],
+[
+"Poverty rate",
+"",
+"",
+"",
+"",
+"",
+"0.014"
+],
+[
+"",
+"",
+"",
+"",
+"",
+"",
+"(0.009)"
+],
+[
+"",
+"",
+"",
+"",
+"",
+"",
+"[0.007]"
+],
+[
+"Per capita income",
+"",
+"",
+"",
+"",
+"",
+"0.017"
+],
+[
+"",
+"",
+"",
+"",
+"",
+"",
+"(0.012)"
+],
+[
+"",
+"",
+"",
+"",
+"",
+"",
+"[0.008]"
+],
+[
+"Black share",
+"",
+"0.134***",
+"0.131***",
+"0.091***",
+"0.082***",
+"0.138***"
+],
+[
+"",
+"",
+"(0.009)",
+"(0.011)",
+"(0.019)",
+"(0.020)",
+"(0.012)"
+],
+[
+"",
+"",
+"[0.005]",
+"[0.008]",
+"[0.012]",
+"[0.013]",
+"[0.008]"
+],
+[
+"Hispanic share",
+"",
+"0.052***",
+"0.049***",
+"0.015",
+"0.011",
+"0.061***"
+],
+[
+"",
+"",
+"(0.009)",
+"(0.010)",
+"(0.012)",
+"(0.013)",
+"(0.010)"
+],
+[
+"",
+"",
+"[0.004]",
+"[0.006]",
+"[0.009]",
+"[0.009]",
+"[0.006]"
+],
+[
+"Community-area fixed effects",
+"",
+"",
+"",
+"Yes",
+"Yes",
+""
+],
+[
+"Housing, crime, and building-violation controls",
+"",
+"",
+"",
+"",
+"Yes",
+""
+],
+[
+"Observations",
+"3,534,224",
+"3,534,224",
+"3,534,224",
+"3,534,224",
+"3,534,224",
+"3,534,224"
+]
+],
+"note": "Outcome: log(1 + hours to completion). Tract variables are standardized across the 789 analytic tracts. Models include request type × year, month-of-sample, weekday, hour-of-day, and reporting-channel fixed effects and log workload. Standard errors clustered by community area (77 clusters) in parentheses; standard errors clustered by tract (789) in brackets. Controls in column 5: owner-occupancy share, median year built, log population density, violent crimes and building violations per 1,000. *** p<0.01, ** p<0.05, * p<0.1 (community-area clustering, t with 76 df)."
+},
+"T5": {
+"cap": "Table 5. Completion times by race-by-poverty tract group",
+"cols": [
+"Tract group",
+"Tracts",
+"Citywide: log points",
+"%",
+"Within community areas: log points",
+"%"
+],
+"widths": [
+2660,
+800,
+1850,
+900,
+2250,
+900
+],
+"font": 8,
+"rows": [
+[
+"<10% Black, low poverty",
+"222",
+"Reference",
+"",
+"Reference",
+""
+],
+[
+"<10% Black, middle poverty",
+"147",
+"0.029** (0.013)",
+"+2.9%",
+"0.011 (0.010)",
+"+1.1%"
+],
+[
+"<10% Black, high poverty",
+"38",
+"0.044** (0.021)",
+"+4.5%",
+"0.003 (0.014)",
+"+0.3%"
+],
+[
+"10-60% Black, low poverty",
+"27",
+"0.009 (0.032)",
+"+0.9%",
+"0.014 (0.021)",
+"+1.4%"
+],
+[
+"10-60% Black, middle poverty",
+"66",
+"0.097*** (0.037)",
+"+10.2%",
+"0.065*** (0.025)",
+"+6.7%"
+],
+[
+"10-60% Black, high poverty",
+"51",
+"0.161*** (0.036)",
+"+17.5%",
+"0.096*** (0.032)",
+"+10.1%"
+],
+[
+">60% Black, low poverty",
+"14",
+"0.191*** (0.042)",
+"+21.0%",
+"0.128*** (0.034)",
+"+13.7%"
+],
+[
+">60% Black, middle poverty",
+"50",
+"0.227*** (0.027)",
+"+25.5%",
+"0.146*** (0.033)",
+"+15.7%"
+],
+[
+">60% Black, high poverty",
+"174",
+"0.259*** (0.022)",
+"+29.5%",
+"0.154*** (0.031)",
+"+16.7%"
+]
+],
+"note": "Coefficients on tract-group indicators relative to tracts with fewer than 10% Black residents and low poverty (bottom tercile). Tract variables are standardized across the 789 analytic tracts. Models include request type × year, month-of-sample, weekday, hour-of-day, and reporting-channel fixed effects and log workload. Standard errors clustered by community area (77 clusters) in parentheses. Within-community-area models add community-area fixed effects. *** p<0.01, ** p<0.05, * p<0.1."
+},
+"T6": {
+"cap": "Table 6. The “bigger jobs” test: race and class gradients by job scope and service type",
+"cols": [
+"",
+"Black share",
+"%",
+"Hardship index",
+"N"
+],
+"widths": [
+3860,
+1700,
+900,
+1700,
+1200
+],
+"font": 8,
+"rows": [
+[
+{
+"panel": "Panel A. By job scope"
+}
+],
+[
+"Fixed-scope jobs, citywide",
+"0.063*** (0.023)",
+"+6.5%",
+"-0.022 (0.021)",
+"894,912"
+],
+[
+"Fixed-scope jobs, within community areas",
+"0.019 (0.029)",
+"+2.0%",
+"0.029*** (0.010)",
+"894,912"
+],
+[
+"Variable-scope jobs, citywide",
+"0.312*** (0.029)",
+"+36.7%",
+"0.020 (0.025)",
+"1,038,455"
+],
+[
+"Variable-scope jobs, within community areas",
+"0.279*** (0.046)",
+"+32.2%",
+"0.016 (0.020)",
+"1,038,455"
+],
+[
+"Other services, citywide",
+"0.081*** (0.010)",
+"+8.4%",
+"-0.013 (0.008)",
+"1,600,857"
+],
+[
+"Other services, within community areas",
+"0.028*** (0.010)",
+"+2.9%",
+"-0.002 (0.005)",
+"1,600,857"
+],
+[
+{
+"panel": "Panel B. Single service types (citywide)"
+}
+],
+[
+"Street Light Out Complaint (fixed)",
+"0.097*** (0.021)",
+"+10.2%",
+"0.015 (0.024)",
+"194,635"
+],
+[
+"Alley Light Out Complaint (fixed)",
+"0.169*** (0.024)",
+"+18.4%",
+"0.014 (0.025)",
+"47,763"
+],
+[
+"Traffic Signal Out Complaint (fixed)",
+"0.104* (0.060)",
+"+11.0%",
+"-0.017 (0.045)",
+"102,660"
+],
+[
+"Garbage Cart Maintenance (fixed)",
+"0.017 (0.012)",
+"+1.7%",
+"-0.002 (0.011)",
+"273,449"
+],
+[
+"Fly Dumping Complaint (variable)",
+"0.850*** (0.074)",
+"+134.0%",
+"0.005 (0.052)",
+"63,012"
+],
+[
+"Weed Removal Request (variable)",
+"0.869*** (0.122)",
+"+138.5%",
+"0.098 (0.103)",
+"68,121"
+],
+[
+"Graffiti Removal Request (variable)",
+"0.029 (0.033)",
+"+3.0%",
+"0.017 (0.017)",
+"305,201"
+],
+[
+"Pothole in Street Complaint (variable)",
+"-0.051 (0.069)",
+"-5.0%",
+"0.145** (0.064)",
+"219,108"
+]
+],
+"note": "Each row is a separate model including hardship, Black share, and Hispanic share. Fixed-scope jobs restore a standardized piece of equipment (lights, signals, signs, carts); variable-scope jobs remove or clean material whose quantity varies (dumping, weeds, debris, graffiti, potholes, street and lot cleaning); see Appendix Table A2. Single-type models use month, weekday, hour, and channel fixed effects. Models include request type × year, month-of-sample, weekday, hour-of-day, and reporting-channel fixed effects and log workload. Standard errors clustered by community area (77 clusters) in parentheses. *** p<0.01, ** p<0.05, * p<0.1."
+},
+"T7": {
+"cap": "Table 7. Historical redlining and today's service speed",
+"cols": [
+"",
+"(a)",
+"(b)",
+"(c)",
+"N"
+],
+"widths": [
+3360,
+1650,
+1650,
+1300,
+1400
+],
+"font": 8,
+"rows": [
+[
+{
+"panel": "Panel A. Request's 1930s HOLC grade (reference: C)"
+}
+],
+[
+"Grade only",
+"-0.109*** (0.035)",
+"-0.049 (0.034)",
+"-0.007 (0.028)",
+"3,057,989"
+],
+[
+"Grade + current race and hardship",
+"0.023 (0.051)",
+"-0.041*** (0.015)",
+"-0.017 (0.019)",
+"3,057,989"
+],
+[
+{
+"panel": "Panel B. Tract Historic Redlining Indicator (per SD)"
+}
+],
+[
+"HRI only",
+"0.011 (0.013)",
+"",
+"",
+"3,302,911"
+],
+[
+"HRI + current race and hardship",
+"0.001 (0.009)",
+"",
+"",
+"3,302,911"
+],
+[
+{
+"panel": "Panel C. Geographic regression discontinuity at HOLC borders (jump on the lower-grade side)"
+}
+],
+[
+"C | D borders, 100 m",
+"0.057** (0.029)",
+"0.058** (0.029)",
+"-0.01",
+"172,922 (129.0 pairs)"
+],
+[
+"C | D borders, 200 m",
+"0.031 (0.026)",
+"0.031 (0.026)",
+"-0.00",
+"343,152 (146.0 pairs)"
+],
+[
+"C | D borders, 400 m",
+"0.009 (0.017)",
+"0.010 (0.017)",
+"-0.01",
+"677,039 (193.0 pairs)"
+],
+[
+"B | C borders, 100 m",
+"0.010 (0.026)",
+"0.010 (0.026)",
+"+0.00",
+"150,927 (136.0 pairs)"
+],
+[
+"B | C borders, 200 m",
+"-0.018 (0.021)",
+"-0.019 (0.021)",
+"+0.00",
+"289,239 (154.0 pairs)"
+],
+[
+"B | C borders, 400 m",
+"-0.019 (0.015)",
+"-0.018 (0.015)",
+"-0.01",
+"530,516 (185.0 pairs)"
+]
+],
+"note": "Panel A columns (a)–(c): grades A, B, and D relative to C. Panel B column (a): HRI coefficient. Panel C columns: (a) jump in log completion time at the border, (b) with tract race and hardship controls, (c) jump in tract Black share (SD units), a balance check that is weak because tract measures cannot vary within a tract. Panel C models include border-pair fixed effects and separate linear distance trends on each side; standard errors clustered by border pair. Panels A–B cluster by community area. *** p<0.01, ** p<0.05, * p<0.1."
+},
+"T8": {
+"cap": "Table 8. Quality of resolution and reporting channels",
+"cols": [
+"",
+"Black share",
+"Hardship index",
+"Hispanic share",
+"Mean / N"
+],
+"widths": [
+3060,
+1600,
+1600,
+1600,
+1500
+],
+"font": 8,
+"rows": [
+[
+{
+"panel": "Panel A. Quality of resolution (percentage points per +1 SD)"
+}
+],
+[
+"Re-reported within 30 days",
+"-0.148 (0.126)",
+"0.149 (0.109)",
+"-0.041 (0.138)",
+"9.55"
+],
+[
+"Re-reported within 90 days",
+"-0.103 (0.176)",
+"0.142 (0.146)",
+"0.025 (0.195)",
+"15.13"
+],
+[
+"Canceled",
+"-0.235*** (0.048)",
+"0.021 (0.049)",
+"-0.169*** (0.056)",
+"2.95"
+],
+[
+"Still unresolved",
+"0.017 (0.029)",
+"0.028 (0.029)",
+"-0.020 (0.034)",
+"0.76"
+],
+[
+{
+"panel": "Panel B. Completion time by reporting channel (log points per +1 SD)"
+}
+],
+[
+"Phone",
+"0.133*** (0.013)",
+"0.016 (0.013)",
+"0.066*** (0.012)",
+"1,867,840"
+],
+[
+"Web or app",
+"0.135*** (0.010)",
+"-0.016** (0.007)",
+"0.038*** (0.009)",
+"1,365,223"
+],
+[
+"Aldermanic office",
+"0.028* (0.016)",
+"0.059*** (0.011)",
+"0.000 (0.011)",
+"301,161"
+]
+],
+"note": "Re-report models use the speed sample; cancellation and unresolved models use all resident-initiated, non-duplicate requests. Channel models estimate the baseline specification separately by channel (without channel fixed effects). Standard errors clustered by community area. *** p<0.01, ** p<0.05, * p<0.1."
+},
+"T9": {
+"cap": "Table 9. Robustness and spatial dependence",
+"cols": [
+"",
+"Black share",
+"Class measure",
+"N"
+],
+"widths": [
+4360,
+1750,
+1750,
+1500
+],
+"font": 8,
+"rows": [
+[
+{
+"panel": "Panel A. Request-level robustness (log points per +1 SD)"
+}
+],
+[
+"Baseline",
+"0.131*** (0.011)",
+"0.004 (0.010)",
+"3,534,224"
+],
+[
+"Exclude border tracts",
+"0.131*** (0.012)",
+"0.006 (0.010)",
+"3,430,574"
+],
+[
+"Percentile rank outcome",
+"2.236*** (0.185)",
+"-0.014 (0.139)",
+"3,534,224"
+],
+[
+"Slower-than-median outcome (pp)",
+"3.200*** (0.303)",
+"-0.056 (0.232)",
+"3,534,224"
+],
+[
+"Cluster by ward",
+"0.131*** (0.015)",
+"0.004 (0.011)",
+"3,534,117"
+],
+[
+"Exclude 2020",
+"0.143*** (0.012)",
+"0.001 (0.010)",
+"2,946,544"
+],
+[
+"Exclude downtown (CA 8, 32, 33)",
+"0.129*** (0.011)",
+"0.001 (0.010)",
+"3,438,858"
+],
+[
+"PCA hardship index",
+"0.131*** (0.012)",
+"0.003 (0.010)",
+"3,534,224"
+],
+[
+"Median household income",
+"0.141*** (0.011)",
+"0.008 (0.010)",
+"3,508,567"
+],
+[
+"Ward x year FE",
+"0.048*** (0.011)",
+"0.003 (0.007)",
+"3,534,224"
+],
+[
+"Tracts weighted equally",
+"0.129*** (0.014)",
+"-0.002 (0.012)",
+"3,534,224"
+],
+[
+"Unwinsorized log hours",
+"0.131*** (0.011)",
+"0.004 (0.010)",
+"3,534,224"
+],
+[
+{
+"panel": "Panel B. Tract-level models of the adjusted completion-time index (789 tracts)"
+}
+],
+[
+"Weighted least squares (HC3)",
+"0.117*** (0.007)",
+"-0.000 (0.007)",
+"789"
+],
+[
+"Spatial error model; lambda = 0.85",
+"0.055*** (0.010)",
+"0.000 (0.006)",
+"789"
+],
+[
+"Spatial lag model; rho = 0.82",
+"0.026*** (0.006)",
+"-0.003 (0.005)",
+"789"
+]
+],
+"note": "Panel A: each row modifies the baseline (column 3 of Table 4); the class measure is the hardship index unless the row names another. The percentile-rank and slower-than-median outcomes are in percentile points and percentage points. Panel B: Moran's I of the adjusted index = 0.74 and of the WLS residuals = 0.59 (both p = 0.001, 999 permutations); queen contiguity, no islands. *** p<0.01, ** p<0.05, * p<0.1."
+},
+"A1": {
+"cap": "Table A1. Variable definitions",
+"cols": [
+"Variable",
+"Definition and source"
+],
+"widths": [
+2400,
+6960
+],
+"font": 8,
+"rows": [
+[
+"Completion time",
+"Hours from request creation to closure; outcome log(1 + hours), winsorized at the type-specific 99th percentile (311 Service Requests)."
+],
+[
+"Hardship index",
+"Mean of six indicators min–max scaled to 0–100 across tracts (per capita income inverted): crowded housing (B25014), household poverty (B17017), unemployment (B23025), adults 25+ without a high school diploma (B15003), population under 18 or 65+ (B01001), per capita income (B19301); ACS 2019–2023. Same dimensions as Nathan and Adams (1976)."
+],
+[
+"Black, Hispanic, white, Asian share",
+"Non-Hispanic Black, Hispanic, non-Hispanic white, and non-Hispanic Asian residents as % of population (B03002)."
+],
+[
+"Housing controls",
+"Owner-occupied share (B25003); median year structure built (B25035; missing values imputed with the community-area median); log population per km² of land."
+],
+[
+"Need controls",
+"Violent Index crimes (FBI codes 01A, 02, 03, 04A, 04B) and building violations per 1,000 residents per year, 2019–2024, geocoded to tracts."
+],
+[
+"Redlining",
+"Historic Redlining Indicator for 2020 tracts (Meier and Mitchell; 1–4, higher = more redlined); 1930s HOLC grade of the request's location (Mapping Inequality)."
+],
+[
+"Workload",
+"Log number of resident-initiated, non-duplicate requests of the same type in the same community area and week."
+],
+[
+"Re-report",
+"A new resident request of the same type at the same address within 30 or 90 days of closure."
+]
+],
+"note": ""
+},
+"A2": {
+"cap": "Table A2. Classification of service types by job scope",
+"cols": [
+"Group",
+"Service types"
+],
+"widths": [
+2000,
+7360
+],
+"font": 8,
+"rows": [
+[
+"Fixed scope (9 types)",
+"Street Light Out; Alley Light Out; Traffic Signal Out; Sign Repair (all other, stop, one-way); Street Light Pole Damage; Garbage Cart Maintenance; Blue Recycling Cart"
+],
+[
+"Variable scope (10 types)",
+"Graffiti Removal; Weed Removal; Tree Debris Clean-Up; Sanitation Code Violation; Fly Dumping; Clean Vacant Lot; Street Cleaning; Yard Waste Pick-Up; Pothole in Street; Alley Pothole"
+],
+[
+"Other (30 types)",
+"Inspections (buildings, trees, sewers, sidewalks, public way), animal services, water service, tree emergencies and planting, snow and ice, abandoned vehicles, rodent baiting, dead animals, missed pick-ups, and remaining types"
+]
+],
+"note": ""
+}
+}
